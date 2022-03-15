@@ -29,7 +29,7 @@ const todoReducer = (state = initialState, action) => {
     }
 
     case "remove": {
-      const newList = state.list.filter((obj) => obj.id != action.id);
+      const newList = state.list.filter((obj) => obj.id !== action.id);
 
       return {
         ...state,
